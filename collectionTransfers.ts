@@ -26,9 +26,9 @@ const main = async () => {
         console.log(`${recipient} has made a new purchase @ ENS (${ENS_TOKEN_CONTRACT}). Item type: ${offer[0].itemType}. `)
 
         if (consideration[0].token == "0x0000000000000000000000000000000000000000"){
-          console.log(currentTime.toUTCString() + " " + `${offerer} has received ${parseInt(consideration[0][3]._hex, 16)} gwei to it's claim balances.\n`);
+          console.log(currentTime.toUTCString() + " " + `${offerer} has received ${parseInt(consideration[0][3]._hex, 16)} gwei\n`);
         } else {
-          console.log(currentTime.toUTCString() + " " + `${offerer} has received ${parseInt(consideration[0][3]._hex, 16)} units of the token ${consideration[0].token} to it's claim balances\n`);
+          console.log(currentTime.toUTCString() + " " + `${offerer} has received ${parseInt(consideration[0][3]._hex, 16)} units of the token ${consideration[0].token} \n`);
         }
       }
     }
