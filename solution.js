@@ -28,8 +28,8 @@ const main = async () => {
     // Use this instead of Ethers.js query filters
     // https://docs.ethers.io/v5/concepts/events/
     if(amount.toNumber() >= TRANSFER_THRESHOLD) {
-      playSound()
       console.log(`New whale transfer for ${name}: https://etherscan.io/tx/${data.transactionHash}`)
+      playSound()
     }
 
   })
